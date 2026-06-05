@@ -1,263 +1,232 @@
-# DateCode 
+<div align="center">
 
-> **A dating app for developers, by developers.**  
-> Swipe right by solving code. Connect through projects. Build relationships through shared passion for coding.
+<!-- Add your logo to public/logo.png in the repo and it will appear here -->
+<img src="https://raw.githubusercontent.com/Arun404notfound/DateCode/main/public/logo.png" alt="DateCode Logo" width="180"/>
+
+<br/>
+
+**Solve. Connect. Build.**
+
+A developer-first dating platform where meaningful connections are built through code, creativity, and shared ambitions.
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
+[![Next.js](https://img.shields.io/badge/Next.js-15-black)](https://nextjs.org)
+[![Supabase](https://img.shields.io/badge/Supabase-Postgres-green)](https://supabase.com)
+[![Status](https://img.shields.io/badge/Status-Not%20Started-red)]()
+
+</div>
 
 ---
 
 ## What is DateCode?
 
-DateCode is a unique dating platform that combines **romantic connection** with **coding challenges**. Instead of swiping blindly, you prove your interest (and coding skills) by solving a problem handpicked by the person whose profile you're viewing.
+Most dating apps filter by appearance. DateCode filters by how you think.
 
-**Core Philosophy:** Why match with strangers when you can match with developers who solve similar problems, build cool projects, and think like you?
+Instead of endless swiping, every profile contains a **coding challenge** chosen by that person. To express interest, you solve it. This creates a natural signal — not of perfection, but of curiosity, effort, and problem-solving style.
 
----
+Beyond challenges, DateCode helps developers discover people working on **similar projects, tech stacks, and ideas**. Connect around what you're building, not just how you look.
 
-## Key Features (Current & Planned)
-
-###  Live Features
-- **Coding-Gated Swiping** — Every profile comes with a coding challenge set by that person. Solve it to swipe right.
-- **Copy-Paste Disabled** — Vanilla code editor with syntax highlighting. No shortcuts. No ChatGPT workarounds. Real skills only.
-- **Profile Showcasing** — Display your tech stack, favorite languages, and current/past projects.
-
-###  In Ideation (Coming Soon)
-- **Project-Based Matching** — Connect with developers working on similar projects or technologies. Dating, but for co-builders.
-- **Coding Difficulty Levels** — Choose challenge difficulty (Easy/Medium/Hard) to signal your skill level and match with similarly-skilled partners.
-- **Code Review Comments** — Exchange feedback on solutions submitted during the swiping process. Get to know someone through their coding style.
-- **Collaborative Project Rooms** — After matching, co-create a small open-source project together as a first date alternative.
-- **Tech Stack Discovery** — Filter by languages, frameworks, and domains (Web3, ML, Mobile, Backend, etc.).
-- **Leaderboards & Badges** — Earn badges for solving problems consistently. Show off your coding prowess.
-- **Live Coding Interviews** — Optional video call where you solve a problem together in real-time.
+> *Compatibility is more than a profile picture — it's how people think, create, and build together.*
 
 ---
 
 ## How It Works
 
-1. **Create Your Profile** — Sign up, add your bio, tech stack, and a link to your GitHub.
-
-2. **Set Your Challenge** — Pick or create a coding problem that represents you. It can be a classic LeetCode problem, a personal puzzle, or a take-home challenge from your company.
-
-3. **Browse Profiles** — Scroll through other developers' profiles.
-
-4. **Solve to Swipe** — See someone you're interested in? Solve their coding problem. Write real, working code (no copy-paste allowed).
-
-5. **Submit & Swipe** — Submit your solution. If it passes the test cases, you can swipe right.
-
-6. **Match & Message** — If they swipe right on you too, you match. Start chatting via the in-app messenger.
-
-7. **Connect on Projects** — Chat about the coding problems you solved, collaborate on projects, or plan a real-life coffee date to pair-program.
+```
+1. Sign in with GitHub
+2. Build your developer profile — stack, projects, interests
+3. Add a coding challenge of your choice to your profile
+4. Browse others' profiles
+5. Solve someone's challenge to express interest
+6. Match if they solve yours back
+7. Chat and build together
+```
 
 ---
 
 ## Tech Stack
 
-- **Frontend:** [React / Vue / Next.js — to be finalized]
-- **Backend:** [Node.js / Python / Go — to be finalized]
-- **Code Execution:** [Judge0 API / Piston / Custom Docker — to be finalized]
-- **Database:** [PostgreSQL / MongoDB — to be finalized]
-- **Authentication:** JWT + OAuth2 (GitHub login encouraged)
-- **Real-Time Chat:** WebSocket / Socket.io
-- **Code Editor:** [Monaco / CodeMirror with sandboxed execution]
+| Layer | Choice | Why |
+|---|---|---|
+| **Frontend** | Next.js 15 (App Router) | Full-stack React, fast MVP, great DX |
+| **UI** | Tailwind CSS + shadcn/ui | Consistent, accessible components |
+| **Auth** | Supabase Auth | GitHub OAuth out of the box |
+| **Database** | Supabase Postgres | Postgres + Realtime in one layer |
+| **Realtime Chat** | Supabase Realtime | WebSocket-based messaging without extra infra |
+| **Code Editor** | Monaco Editor | Same editor as VS Code |
+| **Code Execution** | Judge0 / Piston | Sandboxed multi-language execution |
+| **Hosting** | Vercel + Supabase | Zero-config deploys |
+
+---
+
+## MVP Roadmap
+
+> 🚧 This project has not started yet. Nothing is assigned. All contributions and ideas are welcome.
+
+- [ ] Project scaffold & repo setup
+- [ ] Landing page
+- [ ] GitHub OAuth login
+- [ ] Developer profile (stack, bio, projects, goals)
+- [ ] Add a coding challenge to your profile
+- [ ] Browse profiles
+- [ ] Solve a challenge to express interest
+- [ ] Match system
+- [ ] Basic real-time chat
+- [ ] Project-based discovery (find people by tech/domain)
+- [ ] PWA support
+- [ ] Mobile-responsive polish
+
+---
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js 18+
+- A [Supabase](https://supabase.com) project (free tier works fine)
+- A [Judge0](https://judge0.com) or [Piston](https://github.com/engineer-man/piston) instance for code execution
+
+### Local Setup
+
+```bash
+# Clone the repo
+git clone https://github.com/Arun404notfound/DateCode.git
+cd DateCode
+
+# Install dependencies
+npm install
+
+# Copy environment variables
+cp .env.example .env.local
+```
+
+Fill in `.env.local` with your own credentials. Each contributor runs their own Supabase project and code execution instance — DateCode does not have a shared development database.
+
+```env
+# Get these from your Supabase project dashboard → Settings → API
+NEXT_PUBLIC_SUPABASE_URL=          # e.g. https://xyzxyz.supabase.co
+NEXT_PUBLIC_SUPABASE_ANON_KEY=     # public anon key
+SUPABASE_SERVICE_ROLE_KEY=         # secret service role key (never expose this)
+
+# Code execution — pick one and fill in its values
+JUDGE0_API_URL=                    # https://judge0-ce.p.rapidapi.com
+JUDGE0_API_KEY=                    # from RapidAPI dashboard
+# or self-hosted Piston:
+PISTON_API_URL=                    # e.g. http://localhost:2000
+```
+
+```bash
+# Start the dev server
+npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000).
+
+### Database Setup
+
+Apply the migrations to your own Supabase project:
+
+```bash
+npx supabase db push
+```
+
+Or run them manually via the Supabase SQL editor — see `/supabase/migrations/`.
 
 ---
 
 ## Project Structure
 
 ```
-datecode/
-├── frontend/                 # React/Vue/Next.js UI
-│   ├── components/
-│   ├── pages/
-│   ├── hooks/
-│   └── styles/
-├── backend/                  # API server
-│   ├── routes/
-│   ├── controllers/
-│   ├── models/
-│   ├── middleware/
-│   └── utils/
-├── code-executor/            # Sandboxed code execution service
-│   └── judge.js / judge.py
-├── database/                 # Schema migrations
-│   └── migrations/
-├── docs/                     # Documentation
-└── README.md
+DateCode/
+├── app/                   # Next.js App Router
+│   ├── (auth)/            # Auth routes (login, callback)
+│   ├── (app)/             # Protected app routes
+│   │   ├── profile/       # User profile & challenge setup
+│   │   ├── browse/        # Profile discovery
+│   │   ├── solve/[id]/    # Challenge solving screen
+│   │   └── chat/          # Real-time messaging
+│   └── page.tsx           # Landing page
+├── components/            # Shared UI components
+│   ├── editor/            # Monaco Editor wrapper
+│   ├── profile/           # Profile cards, challenge display
+│   └── ui/                # shadcn/ui components
+├── lib/                   # Utilities & clients
+│   ├── supabase/          # Supabase client (browser + server)
+│   └── judge0/            # Code execution helpers
+├── supabase/
+│   └── migrations/        # SQL migrations
+└── types/                 # TypeScript types
 ```
-
----
-
-## Installation & Setup
-
-### Prerequisites
-- Node.js 16+ (or Python 3.9+)
-- PostgreSQL / MongoDB
-- Git
-
-### Local Development
-
-```bash
-# Clone the repo
-git clone https://github.com/yourusername/datecode.git
-cd datecode
-
-# Install dependencies
-npm install  # or yarn install
-
-# Set up environment variables
-cp .env.example .env
-# Edit .env with your config (DB, API keys, etc.)
-
-# Run database migrations
-npm run migrate
-
-# Start the development server
-npm run dev
-
-# Backend (in a separate terminal)
-cd backend
-npm install
-npm run dev
-
-# Frontend (in another terminal)
-cd frontend
-npm run dev
-```
-
-Server will be live at `http://localhost:3000` (frontend) and `http://localhost:5000` (backend).
-
----
-
-## API Endpoints (Draft)
-
-### Authentication
-- `POST /auth/signup` — Register a new user
-- `POST /auth/login` — Log in
-- `POST /auth/logout` — Log out
-- `GET /auth/profile` — Get current user profile
-
-### Profiles
-- `GET /profiles` — Browse profiles (with filters)
-- `GET /profiles/:id` — Get single profile with challenge
-- `PUT /profiles/:id` — Update your profile
-- `POST /profiles/:id/set-challenge` — Set your coding challenge
-
-### Challenges
-- `GET /challenges/:id` — Get challenge details
-- `POST /challenges/:id/submit` — Submit a solution
-- `GET /challenges/:id/testcases` — Get test cases (after submission)
-
-### Swipes
-- `POST /swipes` — Swipe right on a profile
-- `GET /matches` — Get all matches
-- `POST /messages` — Send a message to a match
-
-### Projects (Ideation)
-- `GET /projects` — Browse collaborative projects
-- `POST /projects` — Create a new project room
-- `POST /projects/:id/join` — Join a project
-
----
-
-## Feature Roadmap
-
-### Phase 1 (MVP) — Weeks 1-6
-- [ ] User authentication & profiles
-- [ ] Challenge submission & code execution
-- [ ] Swiping mechanic with test case validation
-- [ ] Basic matching & messaging
-- [ ] Copy-paste detection
-
-### Phase 2 — Weeks 7-10
-- [ ] Project-based filtering & discovery
-- [ ] Difficulty levels for challenges
-- [ ] Leaderboards & badges system
-- [ ] Code review comments on solutions
-
-### Phase 3 — Weeks 11-14
-- [ ] Collaborative project rooms
-- [ ] Live coding video calls
-- [ ] Advanced analytics & matching algorithm
-- [ ] Social features (follow, upvote, share)
-
-### Phase 4 (Long-term)
-- [ ] Mobile app (React Native)
-- [ ] Community events & hackathon integration
-- [ ] Sponsorships & job board integration
-- [ ] AI-powered matching recommendations
 
 ---
 
 ## Contributing
 
-We're in active ideation! Have a feature idea? Found a bug? Want to jump in?
+DateCode is pre-development and completely open — this is the best time to jump in and shape it.
 
-1. **Fork the repo**
-2. **Create a feature branch:** `git checkout -b feature/your-idea`
-3. **Commit your changes:** `git commit -m "Add: your feature description"`
-4. **Push to branch:** `git push origin feature/your-idea`
-5. **Open a Pull Request** with a clear description
+### Before you start
 
-**Contribution Ideas:**
-- Design new coding challenge types
-- Improve the code execution sandbox
-- Build matching algorithm improvements
-- Design UI/UX mockups
-- Write test cases for challenges
-- Suggest new features in Discussions
+- Check [open issues](https://github.com/Arun404notfound/DateCode/issues) for something to pick up
+- For larger changes, open an issue first to discuss the approach
+- Read [CONTRIBUTING.md](CONTRIBUTING.md) for code style and PR conventions
 
-See [CONTRIBUTING.md](./CONTRIBUTING.md) for detailed guidelines.
+### Good first issues
+
+Look for issues tagged [`good first issue`](https://github.com/Arun404notfound/DateCode/issues?q=label%3A%22good+first+issue%22) — they're scoped to be approachable without deep context.
+
+### Running checks
+
+```bash
+npm run test
+npm run lint
+npm run type-check
+```
 
 ---
 
-## FAQ
+## Design Principles
 
-**Q: Can I use any programming language?**  
-A: MVP supports Python, JavaScript, Java, C++. More coming soon.
+1. **Effort over appearance** — the challenge mechanic is the core filter. Keep it prominent and frictionless.
+2. **Developers first** — GitHub login, Monaco editor, stack-based discovery. Every decision should feel native to how developers work.
+3. **No gamification gimmicks** — no streaks, no "super solves", no dark patterns. Respect users' time.
+4. **Privacy by default** — profiles are opt-in discoverable. Users control what they show.
+5. **Web first, mobile responsive** — the MVP is a Next.js web app. PWA and native app come later, after proving the concept.
 
-**Q: What if I fail someone's coding challenge?**  
-A: You can try again. No penalty. Or move on to the next profile.
+---
 
-**Q: Is this a real dating app?**  
-A: Yes! It's a genuine dating platform with a coding twist. Real connections, real profiles, real feelings. The coding challenge is just the fun gatekeeping mechanism.
+## Deployment
 
-**Q: Can I use my own coding problems or must I pick from a library?**  
-A: Both! You can create custom challenges or pick from curated LeetCode/HackerRank problems.
+### Vercel (recommended)
 
-**Q: Will my code/solutions be public?**  
-A: Only visible to the person whose challenge you solved, unless you opt into showcasing solutions on your profile.
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/Arun404notfound/DateCode)
 
-**Q: Can I connect via GitHub?**  
-A: Yes, OAuth2 GitHub login is built in. Link your GitHub to auto-populate your tech stack and projects.
+Add the same environment variables from `.env.local` in your Vercel project settings before deploying.
+
+### Self-hosted
+
+Any Node.js host works:
+
+```bash
+npm run build
+npm start
+```
 
 ---
 
 ## License
 
-DateCode is open source under the [MIT License](./LICENSE).
+MIT — see [LICENSE](LICENSE) for details.
 
 ---
 
-## Contact & Community
+## Community
 
-- **Email:** [hello@datecode.dev]
-- **Twitter/X:** [@datecode_app]
-- **Discord Server:** [Join our community](https://discord.gg/datecode)
-- **GitHub Discussions:** Ask questions, brainstorm features, and connect with contributors
+- **Discussions**: [GitHub Discussions](https://github.com/Arun404notfound/DateCode/discussions) — ideas, questions, feedback
+- **Issues**: [GitHub Issues](https://github.com/Arun404notfound/DateCode/issues) — bugs and feature requests
 
 ---
 
-## Inspiration & Credits
-
-Inspired by the unique cultures of:
-- Developer communities (Stack Overflow, GitHub, Dev.to)
-- Modern dating apps (Tinder, Bumble, Hinge) — minus the swiping fatigue
-- Open-source collaboration (GitHub, GitLab)
-- Coding interview prep culture
-
-Built with ❤️ by developers, for developers.
-
----
-
-**Status:** 🚀 **In Active Development**  
-Last Updated: June 2026  
-Contributors: [Add your name here]
+<div align="center">
+  <sub>Built by developers, for developers. Contributions welcome.</sub>
+</div>
