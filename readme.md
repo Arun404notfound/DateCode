@@ -1,4 +1,4 @@
-# DateCode 💻❤️
+# DateCode 
 
 > **A dating app for developers, by developers.**  
 > Swipe right by solving code. Connect through projects. Build relationships through shared passion for coding.
