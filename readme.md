@@ -1,6 +1,5 @@
 <div align="center">
 
-<!-- Add your logo to public/logo.png in the repo and it will appear here -->
 <img src="https://raw.githubusercontent.com/Arun404notfound/DateCode/main/public/logo.png" alt="DateCode Logo" width="180"/>
 
 <br/>
