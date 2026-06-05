@@ -15,12 +15,12 @@ DateCode is a unique dating platform that combines **romantic connection** with 
 
 ## Key Features (Current & Planned)
 
-### ✅ Live Features
+###  Live Features
 - **Coding-Gated Swiping** — Every profile comes with a coding challenge set by that person. Solve it to swipe right.
 - **Copy-Paste Disabled** — Vanilla code editor with syntax highlighting. No shortcuts. No ChatGPT workarounds. Real skills only.
 - **Profile Showcasing** — Display your tech stack, favorite languages, and current/past projects.
 
-### 🚀 In Ideation (Coming Soon)
+###  In Ideation (Coming Soon)
 - **Project-Based Matching** — Connect with developers working on similar projects or technologies. Dating, but for co-builders.
 - **Coding Difficulty Levels** — Choose challenge difficulty (Easy/Medium/Hard) to signal your skill level and match with similarly-skilled partners.
 - **Code Review Comments** — Exchange feedback on solutions submitted during the swiping process. Get to know someone through their coding style.
