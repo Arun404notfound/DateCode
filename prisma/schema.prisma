@@ -1,0 +1,56 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Profile {
+  id             String    @id @default(cuid())
+  displayName    String
+  bio            String
+  avatarSeed     String // DiceBear seed, no real photos
+  techStack      String // JSON array, e.g. ["Python","React"]
+  isDemoUser     Boolean   @default(false) // the one "you" account
+  gateQuestion   Question? @relation(fields: [gateQuestionId], references: [id])
+  gateQuestionId String?
+  swipesSent     Swipe[]   @relation("from")
+  swipesGot      Swipe[]   @relation("to")
+  createdAt      DateTime  @default(now())
+}
+
+model Question {
+  id          String    @id // e.g. "q017"
+  difficulty  String // "simple" | "medium" | "hard"
+  tags        String // JSON array
+  prompt      String
+  code        String?
+  options     String // JSON array of 4 strings
+  answerIndex Int // never sent to the client
+  explanation String
+  profiles    Profile[]
+}
+
+model Swipe {
+  id        String   @id @default(cuid())
+  from      Profile  @relation("from", fields: [fromId], references: [id])
+  fromId    String
+  to        Profile  @relation("to", fields: [toId], references: [id])
+  toId      String
+  direction String // "left" | "right"
+  correct   Boolean? // set for right swipes
+  createdAt DateTime @default(now())
+
+  @@unique([fromId, toId]) // one attempt per profile
+}
+
+model Match {
+  id         String   @id @default(cuid())
+  profileAId String // lower id of the pair
+  profileBId String
+  createdAt  DateTime @default(now())
+
+  @@unique([profileAId, profileBId])
+}

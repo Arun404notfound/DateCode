@@ -1,0 +1,332 @@
+[
+  {
+    "displayName": "Ada",
+    "bio": "Will trade bug fixes for coffee.",
+    "avatarSeed": "dummy-ada-0",
+    "techStack": [
+      "Python",
+      "Django"
+    ],
+    "gateQuestionId": "q001",
+    "likesDemoUser": true
+  },
+  {
+    "displayName": "Linus",
+    "bio": "Dog person, vim person, board-game person.",
+    "avatarSeed": "dummy-linus-1",
+    "techStack": [
+      "C++",
+      "CUDA"
+    ],
+    "gateQuestionId": "q009",
+    "likesDemoUser": false
+  },
+  {
+    "displayName": "Grace",
+    "bio": "Recursion enthusiast. See: recursion.",
+    "avatarSeed": "dummy-grace-2",
+    "techStack": [
+      "Ruby",
+      "Rails"
+    ],
+    "gateQuestionId": "q003",
+    "likesDemoUser": false
+  },
+  {
+    "displayName": "Dennis",
+    "bio": "Swipe right if you can explain amortized cost.",
+    "avatarSeed": "dummy-dennis-3",
+    "techStack": [
+      "TypeScript",
+      "Node"
+    ],
+    "gateQuestionId": "q014",
+    "likesDemoUser": true
+  },
+  {
+    "displayName": "Margaret",
+    "bio": "Looking for someone who never force-pushes.",
+    "avatarSeed": "dummy-margaret-4",
+    "techStack": [
+      "TypeScript",
+      "React"
+    ],
+    "gateQuestionId": "q012",
+    "likesDemoUser": false
+  },
+  {
+    "displayName": "Ken",
+    "bio": "I think O(n log n) is a personality trait.",
+    "avatarSeed": "dummy-ken-5",
+    "techStack": [
+      "Java",
+      "Spring"
+    ],
+    "gateQuestionId": "q006",
+    "likesDemoUser": false
+  },
+  {
+    "displayName": "Barbara",
+    "bio": "Ask me about my side project that is 90% done.",
+    "avatarSeed": "dummy-barbara-6",
+    "techStack": [
+      "Python",
+      "PyTorch"
+    ],
+    "gateQuestionId": "q008",
+    "likesDemoUser": true
+  },
+  {
+    "displayName": "Alan",
+    "bio": "Tabs, not spaces. Fight me gently.",
+    "avatarSeed": "dummy-alan-7",
+    "techStack": [
+      "Elixir",
+      "Phoenix"
+    ],
+    "gateQuestionId": "q015",
+    "likesDemoUser": false
+  },
+  {
+    "displayName": "Radia",
+    "bio": "Night owl, shipping at 2am.",
+    "avatarSeed": "dummy-radia-8",
+    "techStack": [
+      "Rust",
+      "WASM"
+    ],
+    "gateQuestionId": "q002",
+    "likesDemoUser": false
+  },
+  {
+    "displayName": "Guido",
+    "bio": "My love language is a clean diff.",
+    "avatarSeed": "dummy-guido-9",
+    "techStack": [
+      "Kotlin",
+      "Android"
+    ],
+    "gateQuestionId": "q011",
+    "likesDemoUser": true
+  },
+  {
+    "displayName": "Hedy",
+    "bio": "Will merge your pull request and your heart.",
+    "avatarSeed": "dummy-hedy-10",
+    "techStack": [
+      "Haskell",
+      "Nix"
+    ],
+    "gateQuestionId": "q004",
+    "likesDemoUser": false
+  },
+  {
+    "displayName": "Brendan",
+    "bio": "Looking for someone who reads the docs first.",
+    "avatarSeed": "dummy-brendan-11",
+    "techStack": [
+      "SQL",
+      "dbt"
+    ],
+    "gateQuestionId": "q013",
+    "likesDemoUser": false
+  },
+  {
+    "displayName": "Sophie",
+    "bio": "Seeking a pair-programming partner for life.",
+    "avatarSeed": "dummy-sophie-12",
+    "techStack": [
+      "Go",
+      "Kubernetes"
+    ],
+    "gateQuestionId": "q006",
+    "likesDemoUser": true
+  },
+  {
+    "displayName": "Tim",
+    "bio": "Refactors on weekends, hikes on Sundays.",
+    "avatarSeed": "dummy-tim-13",
+    "techStack": [
+      "Swift",
+      "iOS"
+    ],
+    "gateQuestionId": "q015",
+    "likesDemoUser": false
+  },
+  {
+    "displayName": "Joan",
+    "bio": "I debug with print statements and no shame.",
+    "avatarSeed": "dummy-joan-14",
+    "techStack": [
+      "C#",
+      "Unity"
+    ],
+    "gateQuestionId": "q010",
+    "likesDemoUser": false
+  },
+  {
+    "displayName": "Bjarne",
+    "bio": "Will trade bug fixes for coffee.",
+    "avatarSeed": "dummy-bjarne-15",
+    "techStack": [
+      "Python",
+      "Django"
+    ],
+    "gateQuestionId": "q002",
+    "likesDemoUser": true
+  },
+  {
+    "displayName": "Anita",
+    "bio": "Dog person, vim person, board-game person.",
+    "avatarSeed": "dummy-anita-16",
+    "techStack": [
+      "C++",
+      "CUDA"
+    ],
+    "gateQuestionId": "q012",
+    "likesDemoUser": false
+  },
+  {
+    "displayName": "Rob",
+    "bio": "Recursion enthusiast. See: recursion.",
+    "avatarSeed": "dummy-rob-17",
+    "techStack": [
+      "Ruby",
+      "Rails"
+    ],
+    "gateQuestionId": "q016",
+    "likesDemoUser": false
+  },
+  {
+    "displayName": "Lea",
+    "bio": "Swipe right if you can explain amortized cost.",
+    "avatarSeed": "dummy-lea-18",
+    "techStack": [
+      "TypeScript",
+      "Node"
+    ],
+    "gateQuestionId": "q005",
+    "likesDemoUser": true
+  },
+  {
+    "displayName": "Yukihiro",
+    "bio": "Looking for someone who never force-pushes.",
+    "avatarSeed": "dummy-yukihiro-19",
+    "techStack": [
+      "TypeScript",
+      "React"
+    ],
+    "gateQuestionId": "q009",
+    "likesDemoUser": false
+  },
+  {
+    "displayName": "Mitch",
+    "bio": "I think O(n log n) is a personality trait.",
+    "avatarSeed": "dummy-mitch-20",
+    "techStack": [
+      "Java",
+      "Spring"
+    ],
+    "gateQuestionId": "q007",
+    "likesDemoUser": false
+  },
+  {
+    "displayName": "Evelyn",
+    "bio": "Ask me about my side project that is 90% done.",
+    "avatarSeed": "dummy-evelyn-21",
+    "techStack": [
+      "Python",
+      "PyTorch"
+    ],
+    "gateQuestionId": "q011",
+    "likesDemoUser": true
+  },
+  {
+    "displayName": "Donald",
+    "bio": "Tabs, not spaces. Fight me gently.",
+    "avatarSeed": "dummy-donald-22",
+    "techStack": [
+      "Elixir",
+      "Phoenix"
+    ],
+    "gateQuestionId": "q002",
+    "likesDemoUser": false
+  },
+  {
+    "displayName": "Frances",
+    "bio": "Night owl, shipping at 2am.",
+    "avatarSeed": "dummy-frances-23",
+    "techStack": [
+      "Rust",
+      "WASM"
+    ],
+    "gateQuestionId": "q016",
+    "likesDemoUser": false
+  },
+  {
+    "displayName": "Vint",
+    "bio": "My love language is a clean diff.",
+    "avatarSeed": "dummy-vint-24",
+    "techStack": [
+      "Kotlin",
+      "Android"
+    ],
+    "gateQuestionId": "q008",
+    "likesDemoUser": true
+  },
+  {
+    "displayName": "Katherine",
+    "bio": "Will merge your pull request and your heart.",
+    "avatarSeed": "dummy-katherine-25",
+    "techStack": [
+      "Haskell",
+      "Nix"
+    ],
+    "gateQuestionId": "q005",
+    "likesDemoUser": false
+  },
+  {
+    "displayName": "Larry",
+    "bio": "Looking for someone who reads the docs first.",
+    "avatarSeed": "dummy-larry-26",
+    "techStack": [
+      "SQL",
+      "dbt"
+    ],
+    "gateQuestionId": "q010",
+    "likesDemoUser": false
+  },
+  {
+    "displayName": "Shafi",
+    "bio": "Seeking a pair-programming partner for life.",
+    "avatarSeed": "dummy-shafi-27",
+    "techStack": [
+      "Go",
+      "Kubernetes"
+    ],
+    "gateQuestionId": "q014",
+    "likesDemoUser": true
+  },
+  {
+    "displayName": "Ryan",
+    "bio": "Refactors on weekends, hikes on Sundays.",
+    "avatarSeed": "dummy-ryan-28",
+    "techStack": [
+      "Swift",
+      "iOS"
+    ],
+    "gateQuestionId": "q001",
+    "likesDemoUser": false
+  },
+  {
+    "displayName": "Mira",
+    "bio": "I debug with print statements and no shame.",
+    "avatarSeed": "dummy-mira-29",
+    "techStack": [
+      "C#",
+      "Unity"
+    ],
+    "gateQuestionId": "q013",
+    "likesDemoUser": false
+  }
+]
