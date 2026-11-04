@@ -2,11 +2,18 @@
 
 A swipe-style matching app where a right swipe only counts if you answer the other person's coding question correctly. Each profile has a "gate" question on time or space complexity, tagged simple, medium or hard. Answer right and your like is sent. Answer wrong and it isn't.
 
+<p align="center">
+  <img src="docs/screenshots/swipe-deck.png" width="300" alt="Date Code swipe deck showing a profile card with avatar, name, bio, tech stack and a simple-difficulty badge" />
+  <img src="docs/screenshots/question-modal.png" width="300" alt="Question modal with a Python code snippet and four multiple-choice complexity options" />
+</p>
+
+<p align="center">
+  <img src="docs/screenshots/demo.gif" width="300" alt="Demo: swipe right, answer the coding question correctly, and get It&#39;s a match" />
+</p>
+
 Status: **v0.1 skeleton**. Seeded dummy profiles, a swipe deck, and a question modal with server-side answer checking.
 
 > **Synthetic data only.** All profiles are made up, avatars are generated offline by DiceBear, and there are no sign-ups, photos of real people, API keys or paid services.
-
-<!-- TODO: add screenshots (deck, question modal, match) to docs/ and link them here -->
 
 ## Stack
 
